@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="Create-tables-3" author="Kost Perepechko">
+        <sqlFile path="tables/Objects/create-table-test.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Objects/create-table-question.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Objects/create-table-answer.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Objects/create-table-testtaker.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Objects/create-table-result.sql" relativeToChangelogFile="true"/>
+
+        <sqlFile path="tables/Datasets/add-data-test.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Datasets/add-data-question.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Datasets/add-data-answer.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Datasets/add-data-testtaker.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="tables/Datasets/add-data-result.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+
+</databaseChangeLog>
